@@ -13,6 +13,7 @@
 		8DF93CA41B7175DB00516E7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF93CA31B7175DB00516E7E /* Images.xcassets */; };
 		8DF93CA71B7175DB00516E7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF93CA51B7175DB00516E7E /* LaunchScreen.xib */; };
 		8DF93CB31B7175DB00516E7E /* UICollectionViewReloadedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93CB21B7175DB00516E7E /* UICollectionViewReloadedTests.swift */; };
+		8DF93CBD1B71775E00516E7E /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93CBC1B71775E00516E7E /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8DF93CAC1B7175DB00516E7E /* UICollectionViewReloadedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewReloadedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF93CB11B7175DB00516E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DF93CB21B7175DB00516E7E /* UICollectionViewReloadedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewReloadedTests.swift; sourceTree = "<group>"; };
+		8DF93CBC1B71775E00516E7E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				8DF93C9C1B7175DB00516E7E /* AppDelegate.swift */,
 				8DF93C9E1B7175DB00516E7E /* ViewController.swift */,
+				8DF93CBC1B71775E00516E7E /* MyCollectionViewCell.swift */,
 				8DF93CA01B7175DB00516E7E /* Main.storyboard */,
 				8DF93CA31B7175DB00516E7E /* Images.xcassets */,
 				8DF93CA51B7175DB00516E7E /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				8DF93C9F1B7175DB00516E7E /* ViewController.swift in Sources */,
 				8DF93C9D1B7175DB00516E7E /* AppDelegate.swift in Sources */,
+				8DF93CBD1B71775E00516E7E /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
