@@ -11,7 +11,7 @@ import UIKit
 class MyCollectionViewCell: UICollectionViewCell {
     
     //1.
-    @IBOutlet weak var textLabel:UILabel!
+    var textLabel = UILabel();
     
     //2.
     var text:String = "" {
