@@ -45,11 +45,39 @@ class ViewController: UICollectionViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - UICollectionViewDataSource
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return datesArray.count
     }
-
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell:MyCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier, forIndexPath: indexPath) as! MyCollectionViewCell
+        
+        cell.text = dateFormatter.stringFromDate(datesArray[indexPath.row])
+        
+        return cell
+    }
+    
+    
+    // MARK: - User Interface Interaction Methods
+    func userTappedAddButton(sender:AnyObject){
+        
+        //1.
+        self.collectionView!.performBatchUpdates({
+            
+            //2.
+            let newDate = NSDate()
+            //3.
+            self.datesArray.insert(newDate, atIndex: 0)
+            
+            //4.
+            let insertIndexPath = NSIndexPath(forItem: 0, inSection: 0)
+            
+            //5.
+            self.collectionView!.insertItemsAtIndexPaths([insertIndexPath])
+            }, completion: nil)
+    }
 
 }
 
